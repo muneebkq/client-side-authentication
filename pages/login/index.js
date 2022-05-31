@@ -22,12 +22,11 @@ export default function index() {
     })
       .then((response) => response.json())
       .then((response) => {
+        if(response.status===200)
         localStorage.setItem("token", response.accessToken);
+        setAuthentication(true)
         router.push("/home/products")
       })
-  }
-  if (!auth) {
-    return <div></div>
   }
   return (
     <div>

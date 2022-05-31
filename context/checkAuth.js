@@ -3,9 +3,9 @@ import { useState, createContext } from "react";
 export const AuthenticationContext = createContext()
 
 function AuthenticationProvider(props){
-    const [auth ,setAuth] =useState(true)
-    function setAuthentication(){
-        setAuth(true)
+    const [auth ,setAuth] =useState(false)
+    function setAuthentication(arg){
+        setAuth(arg)
     }
     const value  = {auth ,setAuthentication}
     return(

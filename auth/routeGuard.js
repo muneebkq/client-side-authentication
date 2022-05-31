@@ -7,10 +7,9 @@ export default function RouteGuard({ children }) {
   const router = useRouter()
   useEffect(() => {
     if (!auth) {
-      router.redirect('/login')
+      router.replace('/login')
     }
-  }, [auth])
-
+  },[auth])
   if(!auth){
     return(
       <div></div>
