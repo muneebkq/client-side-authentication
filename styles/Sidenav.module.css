@@ -1,0 +1,27 @@
+.navigationContainer{
+  @apply flex flex-col justify-between bg-zinc-100 h-full text-neutral-600 text-xs  pt-2  pb-5 border-r-[1px] w-[85px]
+}
+
+.navList {
+  @apply flex flex-col gap-y-2
+}
+
+.additionalClass{
+  @apply font-bold
+}
+
+.navLink {
+  @apply flex flex-col justify-center gap-y-1 active:text-purple-600
+}
+
+.navIcon{
+  @apply text-center py-1 w-16 m-auto hover:bg-white rounded-full
+}
+
+.navActiveIcon{
+  @apply text-center py-1 w-16 m-auto bg-[#425265] rounded-full text-white	
+} 
+
+.sty {
+  @apply text-center py-1 w-16 m-auto hover:bg-white rounded-full 
+}
